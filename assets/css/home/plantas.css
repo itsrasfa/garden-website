@@ -1,0 +1,142 @@
+.container-plants {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-bottom: 120px;
+}
+
+.plants-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  margin-bottom: 40px;
+}
+
+.plants-nav ul {
+  display: flex;
+  gap: 60px;
+  font: 500 1.5rem 'Montserrat';
+  cursor: pointer;
+}
+
+.plants-nav li {
+  padding-bottom: 10px;
+}
+
+.plants-nav li.ativo {
+  border-bottom: 3px solid var(--cor-green2);
+  color: var(--cor-green2);
+}
+
+.plants-list {
+  display: none;
+}
+
+.plants-list.ativo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 15px 15px;
+  column-gap: 30px;
+  align-items: center;
+  animation: show .6s forwards;
+}
+
+.plants-list img {
+  max-width: 100%;
+  max-height: fit-content;
+}
+
+.plants-list a {
+  display: block;
+  color: var(--cor-gray1);
+  font: 400 1.2rem 'Inter';
+}
+
+.plants-list a:hover {
+  color: var(--cor-green2);
+  transform: translateX(4px);
+  transition: 0.2s;
+}
+
+.plants-list.ativo .precos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+
+.link a {
+  color: var(--cor-green2);
+  border-bottom: 2px solid var(--cor-green2);
+  font: 600 1.3rem 'Montserrat';
+}
+
+.link a:hover {
+  color: var(--cor-green1);
+}
+
+@media (max-width:1000px) {
+  .plants-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .plants-nav {
+    font-size: 2rem;
+    gap: 60px;
+  }
+
+  .plants-nav h1 {
+    font-size: 2rem;
+  }
+
+  .plants-nav ul {
+    gap: 60px;
+    font: 600 1.2rem 'Montserrat';
+  }
+
+  .plants-list.ativo {
+    row-gap: 20px;
+  }
+}
+
+@media (max-width:600px) {
+  .container-plants {
+    padding-bottom: 90px;
+  }
+
+  .link {
+    padding-bottom: 90px;
+  }
+
+  .plants-nav {
+    align-items: center;
+  }
+
+  .plants-nav ul {
+    gap: 40px;
+    font: 600 1rem 'Montserrat';
+  }
+}

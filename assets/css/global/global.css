@@ -1,0 +1,61 @@
+:root {
+  --cor-gray1: #505050;
+  --cor-gray2: #8D8D8D;
+  --cor-gray3: #8d8d8dae;
+  --cor-green1: #3B6B4C;
+  --cor-green2: #5B7D67;
+  --cor-green3: #5b7d673f;
+  --cor-bg: #F7F7F7;
+}
+
+.font-title1 {
+  font: 700 4rem/1.2 'Averia Serif Libre';
+}
+
+.font-title2 {
+  font: 400 3.8rem 'Averia Serif Libre';
+}
+
+.font-title3 {
+  font: 500 1.5rem 'Montserrat';
+}
+
+.font-m {
+  font: 500 1.1rem/1.5 'Montserrat';
+}
+
+.font-m-m {
+  font: 400 italic 1.8rem/1.5 'Montserrat';
+}
+
+.font-m-p {
+  font: 400 1.3rem/1.5 'Montserrat';
+}
+
+.font-p-p {
+  font: 400 .9rem/1.5 'Montserrat';
+}
+
+.font-p {
+  font: 400 1.1rem/1.5 'Montserrat';
+}
+
+.cor-green1 {
+  color: var(--cor-green1);
+}
+
+.cor-green2 {
+  color: var(--cor-green2);
+}
+
+.cor-gray1 {
+  color: var(--cor-gray1);
+}
+
+.cor-gray2 {
+  color: var(--cor-gray2);
+}
+
+.cor-bg {
+  background-color: var(--cor-bg);
+}

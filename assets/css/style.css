@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Inter:wght@400;500&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+/* global */
+@import url(./global/reset.css);
+@import url(./global/global.css);
+
+@import url(./global/header.css);
+@import url(./global/footer.css);
+
+/* home */
+@import url(/assets/css/home/introducao.css);
+@import url(/assets/css/home/plantas.css);
+@import url(/assets/css/home/about.css);
+@import url(/assets/css/home/contato.css);
+
+@import url(/plants/css/plants.css);
+@import url(/plants/css/products.css);
+
+.animar-scroll {
+  opacity: 0;
+  transform: translate(0px, -42px);
+  transition: .3s;
+}
+
+.animar-scroll.ativo {
+  opacity: 1;
+  transform: translate(0, 0);
+}
